@@ -1,0 +1,58 @@
+/*Public Style*/
+* {
+  box-sizing: border-box;
+}
+/*******************************************************************/
+.menuPic {
+  height: 24%;
+}
+.homeMenuPic {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.menuItem {
+  height: 19%;
+}
+.homeIconPic {
+  margin: 10%;
+  width: 75%;
+  height: 75%;
+  opacity: 0.8;
+}
+.homeIconPic:hover {
+  margin: 10%;
+  width: 85%;
+  height: 85%;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  * {
+    box-sizing: border-box;
+  }
+  .menuPic {
+    display: none;
+  }
+  .TopMenu {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .menuItem {
+    flex: 25;
+    height: 100%;
+  }
+  .homeIconPic {
+    width: 70%;
+    height: 70%;
+    opacity: 0.6;
+  }
+  .homeIconPic:hover {
+    width: 85%;
+    height: 85%;
+    opacity: 1;
+    margin-top: 5%;
+  }
+}

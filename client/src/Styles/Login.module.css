@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+.Container {
+  height: 98vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+}
+
+.FormLogin {
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  gap: 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+}
+
+.FormLogin label {
+  font-size: 18px;
+}
+
+.FormLogin input {
+  width: 70%;
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  text-align: center;
+}
+
+.Btn {
+  width: 40%;
+  height: 45px;
+  font-size: 15px;
+  margin-top: 25px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  color: black;
+  border: none;
+  outline: none;
+  text-align: center;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+}
+
+.Btn:hover {
+  box-shadow: -2px -2px 10px #fff, 10px 10px 30px rgb(113, 113, 113);
+  cursor: pointer;
+}

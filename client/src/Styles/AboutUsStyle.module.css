@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ***************************************** */
+.MainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  direction: rtl;
+}
+
+.RightSide {
+  flex: 10;
+  height: 98vh;
+  background-color: lightgrey;
+  line-height: 75px;
+  display: flex;
+}
+
+.LeftSide {
+  flex: 90;
+  background-color: #eee;
+  height: 98vh;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentAbout {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.selectorAbout {
+  width: 90%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  margin-top: 1%;
+  gap: 20px;
+}
+
+.aboutSelectorItem {
+  background-color: #eee;
+  color: black;
+  height: 50px;
+  width: 180px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+}
+
+.aboutSelectorItem:hover {
+  background-color: #eee;
+  height: 50px;
+  width: 180px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 15px 20px mediumorchid;
+}
+
+.aboutParag {
+  width: 90%;
+  height: 85vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .MainDiv {
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+  }
+
+  .RightSide {
+    height: 15%;
+    width: 100%;
+    direction: ltr;
+  }
+  .LeftSide {
+    height: 85%;
+    width: 100%;
+  }
+
+  .contentAbout {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+  }
+
+  .selectorAbout {
+    margin-top: 1%;
+    width: 100%;
+    height: 15%;
+    gap: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+  }
+
+  .aboutSelectorItem {
+    background-color: #eee;
+    color: black;
+    height: 60px;
+    width: 90%;
+    font-size: 13px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  }
+
+  .aboutSelectorItem:hover {
+    background-color: #eee;
+    height: 60px;
+    width: 95%;
+    font-size: 13px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 15px 20px mediumorchid;
+  }
+
+  .aboutParag {
+    width: 100%;
+    height: 85%;
+    padding-top: 0;
+  }
+}

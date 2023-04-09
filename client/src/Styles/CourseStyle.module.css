@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ********************* */
+.MainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  direction: rtl;
+}
+
+.LeftSide {
+  flex: 10;
+  height: 98vh;
+  background-color: lightgrey;
+  line-height: 75px;
+  display: flex;
+}
+
+.RightSide {
+  flex: 90;
+  background-color: #eee;
+  height: 98vh;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentTech {
+  width: 100%;
+  height: 98%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3%;
+  justify-content: center;
+  align-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .MainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .RightSide {
+    height: fit-content;
+    width: 100%;
+  }
+  .LeftSide {
+    height: 10%;
+    direction: ltr;
+    line-height: 0;
+  }
+
+  .contentTech {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+  }
+}

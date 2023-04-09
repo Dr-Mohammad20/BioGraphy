@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ***************************************** */
+.MainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  direction: rtl;
+}
+
+.RightSide {
+  flex: 10;
+  height: 98vh;
+  background-color: lightgrey;
+  line-height: 75px;
+  display: flex;
+}
+
+.LeftSide {
+  flex: 90;
+  background-color: #eee;
+  height: 98vh;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContactUs {
+  width: 95%;
+  text-align: center;
+}
+
+.mainDivContact {
+  padding: 0 1% 0 0;
+  width: 98%;
+  height: 88vh;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  border-radius: 20px;
+  outline: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.AdressLeft {
+  flex: 35%;
+  height: 85%;
+  direction: rtl;
+  margin: 1%;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  border-radius: 20px;
+  outline: none;
+  line-height: 70px;
+  padding: 15px;
+}
+
+.AdressRight {
+  flex: 60%;
+  height: 85%;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.AdressDown {
+  flex: 95%;
+}
+
+.Map {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.contactIcon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.contactIcon:hover {
+  margin: 10px;
+  animation: hovericon 0.5s infinite;
+}
+
+.Font1 {
+  font-size: 30px;
+}
+
+.Font2 {
+  font-size: 25px;
+}
+
+.Font3 {
+  font-size: 20px;
+}
+
+@keyframes hovericon {
+  0% {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+
+  50% {
+    width: 70px;
+    height: 70px;
+    margin: 0px;
+    filter: drop-shadow(0 7px 15px #000);
+  }
+
+  100% {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .MainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .RightSide {
+    height: 15%;
+    width: 100%;
+    direction: ltr;
+    line-height: 0;
+  }
+  .LeftSide {
+    height: fit-content;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .contentContactUs {
+    width: 99%;
+    height: 100%;
+  }
+
+  .mainDivContact {
+    width: 99%;
+    height: 88vh;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .AdressLeft {
+    width: 99%;
+    flex: 40;
+    height: 40%;
+    direction: rtl;
+    box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+    border-radius: 20px;
+    outline: none;
+    line-height: 35px;
+  }
+
+  .AdressRight {
+    width: 99%;
+    flex: 40;
+    height: 30%;
+    box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+    border-radius: 20px;
+    outline: none;
+  }
+
+  .AdressDown {
+    height: 20%;
+    flex: 20;
+    width: 99%;
+    padding: 2%;
+  }
+
+  .Font1 {
+    font-size: 25px;
+  }
+
+  .Font2 {
+    font-size: 20px;
+  }
+
+  .Font3 {
+    font-size: 15px;
+  }
+}
